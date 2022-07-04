@@ -40,6 +40,8 @@ app.post("/get_country_data", (req, res, next) => {
   res.redirect("/data");
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log("server is ruuning on port 3000");
+});
 
 //https://restcountries.com/v2/name/${country}
