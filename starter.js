@@ -12,10 +12,10 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.set("view engine", "ejs");
+
 
 app.get("/", (req, res, next) => {
-  res.render("index.ejs");
+  res.render("index.html");
 });
 
 app.get("/data", (req, res, next) => {
